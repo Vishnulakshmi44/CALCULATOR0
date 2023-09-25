@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"
+        href="https://purepng.com/public/uploads/large/purepng.com-calculator-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596017qe0p7.png">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="bgImg">
+        <img src="./Images/24-249670_high-resolution-wooden-background-hd.jpg" width="100%" height="100%">
+    </div>
+    <br>
+    <center>
+        <h1>CALCULATOR </h1>
+    </center>
+    <br><br>
+    <div class="container">
+        <div class="calculator">
+            <input id="output" type="text" readonly placeholder="0">
+            <div class="btn">
+
+                <div class="row">
+
+                    <button id="del" class="delbtn" onclick="removeLastValue()">C</button>
+                    <button id="all-clr" class="delbtn" onclick="allClear( )">AC</button>
+                    <button id="" onclick="display('/')" class="fn-btn">/</button>
+                    <button id="open-brac" class="fn-btn" onclick="display('/100*')">%</button>
+                    <!-- <button id="back-btn" onclick="display('')"><i class="fa-solid fa-delete-left"></i></button> -->
+                </div>
+                <div class="row">
+                    <button id="seven" class="nbtn" onclick="display('7')">7</button>
+                    <button id="eight" class="nbtn" onclick="display('8')">8</button>
+                    <button id="nine" class="nbtn" onclick="display('9')">9</button>
+                    <button id="" onclick="display('*')" class="fn-btn">x</button>
+                </div>
+
+                <div class="row">
+                    <button id="four" class="nbtn" onclick="display('4')">4</button>
+                    <button id="five" class="nbtn" onclick="display('5')">5</button>
+                    <button id="six" class="nbtn" onclick="display('6')">6</button>
+                    <button id="" onclick="display('-')" class="fn-btn">-</button>
+
+                </div>
+                <div class="row">
+                    <button id="one" class="nbtn" onclick="display('1')">1</button>
+                    <button id="two" class="nbtn" onclick="display('2')">2</button>
+                    <button id="three" class="nbtn" onclick="display('3')">3</button>
+                    <button id="" onclick="display('+')" class="fn-btn">+</button>
+                </div>
+                <div class="row">
+                    <button id="point" class="nbtn" onclick="display('.')">.</button>
+                    <button id="seven" class="nbtn" onclick="display('0')">0</button>
+                    <button id="exp" class="nbtn" onclick="display('**')">exp</button>
+                    <button class="equal" onclick="expEval()">=</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="calc.js">
+
+</script>
+
+</html>
